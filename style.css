@@ -19,18 +19,7 @@ main {
     margin-left: 80px;
 }
 
-.text-area {
-    border: none;
-    color: #0A3871;
-    margin-top: 90px;
-    text-transform: lowercase;
-}
-::placeholder { color: #0A3871; }
-  .text-area:focus {
-      outline: none;
-    }
-
-.mensagem {
+#text-area {
     background: white;
     background-image: url("imagens/boneco.png");
     background-repeat: no-repeat;
@@ -41,8 +30,28 @@ main {
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
+       
 }
-.mensagem:focus {
+
+::placeholder { color: #0A3871; }
+  .text-area:focus {
+      outline: none;    
+      
+    }
+
+#mensagem {
+    background: white;
+    background-image: url("/cadeado.webp");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #ffffff;
+    margin-left: 98px;
+    margin-top: 20px;
+    padding-left: 20px;
+    position: absolute;
+}
+#mensagem:focus {
     outline: none;
 }
 
@@ -51,7 +60,7 @@ main {
     margin-top: 18px;
 }
 
-.btn-desencriptar {
+#btn-desencriptar {
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
@@ -62,7 +71,7 @@ main {
     width: 328px;
 }
 
-.btn-encriptar {
+#btn-encriptar {
     background-color: #370f67;
     border: 1px solid #5d18ac;
     border-radius: 24px;
@@ -72,20 +81,30 @@ main {
     width: 328px;
 }
 
-.btn-copiar {
+#btn-copiar {
+    background-color: #8867b1;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    color: #430a71;
+    color: #ffffff;
     cursor: pointer;
     height: 67px;
     margin-left: 108px;
-    margin-top: 402px;
+    margin-top: 360px;
     position: absolute;
     width: 336px;
+
 }
 
 .informacao {
     color: #3a0e65;
     font-size:18px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap:32px;
 }
 

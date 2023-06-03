@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Decodificador</title>
 </head>
 
@@ -17,34 +18,36 @@
     </header>
     <main>
         <section>
-            <textarea class="text-area" cols="40" rows="4" placeholder="Digite seu texto"></textarea>
+            <textarea cols="40" rows="7" id="textarea" placeholder="Digite seu texto"></textarea>
             <div>
                 <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
             </div>
             <div class="botoes">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                <button id="btn-encriptar">Criptografar</button>
+                <button id="btn-desencriptar">Descriptografar</button>
             </div>
         </section>
         <section>
-            <textarea class="mensagem" cols="20" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
+            <textarea id="mensagem" cols="20" rows="9" disabled="">
+                
+            </textarea>
+            <button id="btn-copiar">Copiar</button>
         </section>
     </main>
     <footer class="footer">
-        <div>
+        <div id="linkedin">
             <a href="https://www.linkedin.com/in/wesley-anunciacao-xavier-533753168" target="_blank"><img
                     src="/linkedin.png" alt=""></a>
-        </div>
+        </div id="github">
         <div>
             <a href="https://github.com/wesxvr74" target="_blank"><img src="/github.png" alt=""></a>
         </div>
-        <div>
+        <div id="instagram">
             <a href="https://www.instagram.com/wx.2506/" target="_blank"><img src="/instagram.png" target="_blank"
                     alt=""></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    
 </body>
 
 </html>
