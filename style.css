@@ -6,11 +6,13 @@
     line-height: 150%;
 }
 
-.logo {
+#logo {
     margin-left: 10px;
     padding-top: 10px;
-    width:2%;
+    width: 2%;
     position: fixed;
+    border-radius: 50%;
+
 }
 
 main {
@@ -30,14 +32,17 @@ main {
     margin-top: 20px;
     padding-left: 20px;
     position: fixed;
-       
+
 }
 
-::placeholder { color: #0A3871; }
-  .text-area:focus {
-      outline: none;    
-      
-    }
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+
+}
 
 #mensagem {
     background: white;
@@ -51,6 +56,7 @@ main {
     padding-left: 20px;
     position: absolute;
 }
+
 #mensagem:focus {
     outline: none;
 }
@@ -97,14 +103,40 @@ main {
 
 .informacao {
     color: #3a0e65;
-    font-size:18px;
+    font-size: 18px;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    gap:32px;
+    gap: 32px;
+
 }
 
+#linkedin {
+    transition: transform 0.03s ease
+}
+
+#linkedin:hover {
+    transform: scale(1.2)
+}
+
+#github {
+    transition: transform 0.03s ease
+    
+}
+
+#github:hover {
+    transform: scale(1.2)
+}
+
+#instagram {
+    transition: transform 0.03s ease
+    
+}
+
+#instagram:hover {
+    transform: scale(1.2)
+}
