@@ -23,7 +23,6 @@ main {
 
 #text-area {
     background: white;
-    background-image: url("https://wesxvr74.github.io/decodificador/cadeado.webp");
     background-repeat: no-repeat;
     border: none;
     border-radius: 24px;
@@ -75,6 +74,11 @@ main {
     height: 67px;
     margin-left: 30px;
     width: 328px;
+    transition: transform 0.03s ease
+}
+
+#btn-desencriptar:hover {
+    transform: scale(1.05)
 }
 
 #btn-encriptar {
@@ -85,6 +89,11 @@ main {
     cursor: pointer;
     height: 67px;
     width: 328px;
+    transition: transform 0.03s ease
+}
+
+#btn-encriptar:hover {
+    transform: scale(1.05)
 }
 
 #btn-copiar {
@@ -98,7 +107,11 @@ main {
     margin-top: 360px;
     position: absolute;
     width: 336px;
+    transition: transform 0.03s ease
+}
 
+#btn-copiar:hover {
+    transform: scale(1.05)
 }
 
 .informacao {
@@ -111,7 +124,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 20px;
 
 }
 
@@ -125,7 +138,6 @@ main {
 
 #github {
     transition: transform 0.03s ease
-    
 }
 
 #github:hover {
@@ -134,7 +146,6 @@ main {
 
 #instagram {
     transition: transform 0.03s ease
-    
 }
 
 #instagram:hover {
